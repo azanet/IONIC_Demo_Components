@@ -13,7 +13,8 @@ import { ModalInfoPage } from './modal-info.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ModalInfoPageRoutingModule
+    ModalInfoPageRoutingModule,
+    
   ],
   declarations: [ModalInfoPage]
 })

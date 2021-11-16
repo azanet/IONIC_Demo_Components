@@ -8,6 +8,7 @@ import { ModalPageRoutingModule } from './modal-routing.module';
 
 import { ModalPage } from './modal.page';
 import { ComponentsModule } from '../../components/components.module';
+import { ModalInfoPageModule } from '../modal-info/modal-info.module';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { ComponentsModule } from '../../components/components.module';
     FormsModule,
     IonicModule,
     ModalPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    ModalInfoPageModule
   ],
   declarations: [ModalPage]
 })
