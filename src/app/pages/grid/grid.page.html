@@ -1,0 +1,33 @@
+<app-header title="Grid" backBtn="true"></app-header>
+
+
+<ion-content class="ion-padding">
+
+
+ <!--Para mantener un tamaño FIJO
+  <ion-grid fixed >
+  --> 
+
+ <ion-grid fixed >
+  <ion-row >
+    <!--Estableciendo tamaños para distintos tipos de pantalla-->
+    <ion-col size="12" size-lg="3" size-md="4" size-sm="6" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]">
+  <ion-card>
+    <ion-img src="assets/krazylab.png"></ion-img>
+  </ion-card>
+  
+<ion-card-header>
+  <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+  <ion-card-title>Awesome Title</ion-card-title>
+</ion-card-header>
+
+<ion-card-content>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem et fugiat, perspiciatis ullam dolore maxime similique repellendus saepe? Ipsam neque dignissimos consequuntur dolor quasi cum vero nesciunt dolorem
+</ion-card-content>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+</ion-content>

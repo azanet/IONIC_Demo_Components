@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button color="micolor" (click)="presentPopover($event)">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>popover</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-back-button color="primary" defaultHref="home" text="REGRESAR" ></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-button (click)="presentPopover($event)" expand="block" shape="round">
+    Mostrar Popover
+  </ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="micolor" (click)="presentPopover($event)">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-footer>

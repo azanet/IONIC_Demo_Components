@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-avatar>
+        <!--<img src="assets/krazylab.png" />--> 
+        <ion-img src="assets/krazylab.png"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+    <ion-title>avatar</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-back-button color="primary" defaultHref="/" text="REGRESAR"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-chip color="dark" outline="true" *ngFor="let item of [1,1,1,1]">
+    <ion-avatar>
+      <img src="assets/krazylab.png" />
+    </ion-avatar>
+    <ion-label>KrazyLab</ion-label>
+  </ion-chip>
+
+<ion-list >
+  <ion-item *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1]" color="success">
+    <ion-avatar slot="start">
+      <img src="assets/krazylab.png" />
+    </ion-avatar>
+    <ion-label>Krazy Lab</ion-label>
+  </ion-item>
+</ion-list>
+
+
+  
+</ion-content>

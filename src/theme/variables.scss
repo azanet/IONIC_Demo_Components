@@ -3,6 +3,7 @@
 
 /** Ionic CSS Variables **/
 :root {
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,7 +75,18 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+
+  /**Color Personalizado**/
+  --ion-color-micolor: #aa00ff;
+  --ion-color-micolor-rgb: 170,0,255;
+  --ion-color-micolor-contrast: #ffffff;
+  --ion-color-micolor-contrast-rgb: 255,255,255;
+  --ion-color-micolor-shade: #9600e0;
+  --ion-color-micolor-tint: #b31aff;
+
 }
+
 
 @media (prefers-color-scheme: dark) {
   /*
@@ -233,4 +245,16 @@
 
     --ion-card-background: #1e1e1e;
   }
+
+}
+
+//Agregando 'micolor' a las variables de IONIC
+.ion-color-micolor{
+  /**Color Personalizado**/
+  --ion-color-base: var(--ion-color-micolor) !important;
+  --ion-color-base-rgb: var(--ion-color-micolor-rgb) !important;
+  --ion-color-base-contrast: var(--ion-color-micolor-contrast) !important;
+  --ion-color-base-contrast-rgb: var(--ion-color-micolor-contrast-rgb) !important;
+  --ion-color-base-shade: var(--ion-color-micolor-shade) !important;
+  --ion-color-base-tint: var(--ion-color-micolor-tint) !important;
 }

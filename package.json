@@ -1,8 +1,8 @@
 {
-  "name": "IONIC_Demo_Components",
+  "name": "IONIC Demo Components",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "David Freyre Muñoz",
+  "homepage": "https://github.com/azanet/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -62,5 +62,5 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
   },
-  "description": "An Ionic project"
+  "description": "App de Demo for training the components use"
 }

@@ -1,3 +1,35 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-split-pane when="md" contentId="miMenu">
+
+
+  <ion-menu side="start" menuId="first" contentId="miMenu">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Start Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+
+    <ion-content>
+
+      <ion-list>
+        <!--Cerrando el MENU automaticamente, Cuando se SELECCIONE ALGO (y 'autohide') haciendo que se esten MOSTRANDO las OPCIONES DEL MENU -->
+        <ion-menu-toggle *ngFor="let item of componentes | async"
+                          autoHide="false">
+
+        <ion-item  [routerLink]="item.redirectTo" detail="true">
+          <ion-icon color="primary" slot="start" [name]="item.icon"></ion-icon>
+          <ion-label>{{item.name}}</ion-label>
+        </ion-item>
+
+        </ion-menu-toggle>
+      </ion-list>
+      
+
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="miMenu"></ion-router-outlet>
+</ion-split-pane>
 </ion-app>

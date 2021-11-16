@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modal Page Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="ion-padding">
+
+  <h1>{{apellidos}}, {{nombre}}</h1>
+
+  <ion-button (click)="salirSinArgumentos()" expand="block" shape="round">
+    Salir Sin Argumentos
+  </ion-button>
+
+
+  <ion-button (click)="salirConArgumentos()" expand="block" shape="round">
+    Salir Con Argumentos
+  </ion-button>
+
+</ion-content>
